@@ -1,5 +1,5 @@
 # json-server files
-server/db.json
+db.json
 
 # Logs
 logs

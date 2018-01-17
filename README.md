@@ -1,5 +1,15 @@
 # HYF - JS WEEK 5
 
+## INSTALLATION
+- Install dependencies `yarn install`
+- Create `db.json` file with this contents:
+```json
+{
+  "people" : []
+}
+```
+- Start server `yarn start`
+
 ## JSON
 - JSON.stringify()
 - JSON.parse()
