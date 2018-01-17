@@ -1,0 +1,95 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  margin: 0;
+  background-color: #d3d3d3 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+textarea {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  width: 200px;
+  margin-top: 20px;
+  padding: 15px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #5270ff;
+}
+
+.hidden {
+  display: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+  padding: 20px 0;
+  margin-bottom: 30px;
+  color: #fff;
+  background-color: #5270ff;
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 600px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.message {
+  padding: 20px;
+  border: 1px solid #303030;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.message.info {
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}
+
+.message.error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.message.success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}

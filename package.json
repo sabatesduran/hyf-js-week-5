@@ -1,0 +1,11 @@
+{
+  "name": "js-week-5",
+  "version": "1.0.0",
+  "description": "HYF - JS - WEEK 5",
+  "main": "index.js",
+  "author": "Dídac Sabatés <sabatesduran@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.12.1"
+  }
+}
