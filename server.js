@@ -6,7 +6,7 @@ const middlewares = jsonServer.defaults();
 server.use(middlewares);
 
 server.use(jsonServer.bodyParser);
-server.use('/people', function (req, res) {
+server.post('/people', function (req, res) {
   console.log(`\n================ New person ================`);
   console.log(req.body);
   console.log(`============================================\n`);
