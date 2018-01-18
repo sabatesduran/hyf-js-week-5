@@ -35,8 +35,18 @@ console.log(myData);
 printDivider();
 
 // JSON string
-console.log(`--> myData stringified is a ${typeof JSON.stringify(myData)} \n`);
-console.log(JSON.stringify(myData));
+const jsonStringify = JSON.stringify(myData);
+console.log(`--> myData stringified is a ${typeof jsonStringify}\n`);
+console.log(jsonStringify);
+
+// Executing printDivider function
+printDivider();
+
+// Object keys
+// hasOwnProperty()
+const jsonKeys = JSON.stringify(myData);
+console.log(`--> myData keys are an ${typeof jsonKeys}\n`);
+console.log(jsonKeys);
 
 // Executing printDivider function
 printDivider();

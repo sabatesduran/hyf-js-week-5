@@ -2,7 +2,7 @@
 
 ## INSTALLATION
 - Install dependencies `yarn install`
-- Create `db.json` file with this contents:
+- Create `server/db.json` file with this contents:
 ```json
 {
   "people" : []
