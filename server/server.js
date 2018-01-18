@@ -1,10 +1,12 @@
+const path = require('path');
 const jsonServer = require('json-server');
 const server = jsonServer.create();
-const router = jsonServer.router('db.json');
+const router = jsonServer.router(path.join(__dirname, 'db.json'));
 const middlewares = jsonServer.defaults();
 
-server.use(middlewares);
+const PORT = 3000;
 
+server.use(middlewares);
 server.use(jsonServer.bodyParser);
 server.post('/people', function (req, res) {
   console.log(`\n================ New person ================`);
@@ -23,7 +25,7 @@ server.post('/people', function (req, res) {
   res.jsonp({ status: "success" });
 });
 
-server.use(router)
-server.listen(3000, function () {
-  console.log('JSON Server is running in PORT 3000');
+server.use(router);
+server.listen(PORT, function () {
+  console.log(`JSON Server is running on PORT ${PORT}`);
 });
